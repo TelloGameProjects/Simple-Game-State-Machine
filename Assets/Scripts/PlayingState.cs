@@ -1,23 +1,14 @@
 ﻿using System;
+using Vast.StateMachine;
 
 
 [Serializable]
 public class PlayingState : State
 {
-    private string name = String.Empty;
-
-    #region Properties
-    public string Name
-    {
-        get { return this.name; }
-        protected set { this.name = value; }
-    }
-    #endregion
-
     #region Class Methods
-    public abstract void OnEnter();
-    public abstract void OnExit();
-    public abstract void Update();
-    public abstract void FixedUpdate();
+    public override void OnEnter() { }
+    public override void OnExit() { }
+    public override void Update() { }
+    public override void FixedUpdate() { }
     #endregion
 }
