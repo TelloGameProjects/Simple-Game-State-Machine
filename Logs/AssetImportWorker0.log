@@ -485,3 +485,4 @@ Received Import Request.
   path: Assets/Scripts/Managers/AppManager.asset
   artifactKey: Guid(7dfabeeac53c9f244861212a0f32872c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/Managers/AppManager.asset using Guid(7dfabeeac53c9f244861212a0f32872c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840a5dffe7e35eb056052872fa7c1b29') in 0.030700 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
