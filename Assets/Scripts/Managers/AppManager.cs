@@ -5,5 +5,7 @@ using Vast.StateMachine;
 public class AppManager : ScriptableObject
 {
     [SerializeField]
-    public StateMachine appState;
+    private StateMachine appStateMachine;
+
+    public StateMachine AppStateMachine { get => appStateMachine; set => appStateMachine = value; }
 }
