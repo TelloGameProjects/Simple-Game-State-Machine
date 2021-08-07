@@ -6,12 +6,14 @@ using Vast.StateMachine;
 public class MainMenuInitializer : MonoBehaviour
 {
     [SerializeField] private AppManager managingParent;
+
+    private SplashScreenState splashScreenState;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        managingParent.AppStateMachine.AddState(new SplashScreenState());
+        splashScreenState = (SplashScreenState)(managingParent.AppStateMachine.AddState(new SplashScreenState()));
         managingParent.AppStateMachine.OnStateChange += CheckChangedState;
     }
 
