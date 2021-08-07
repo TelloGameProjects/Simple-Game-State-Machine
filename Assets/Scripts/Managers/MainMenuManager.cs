@@ -7,10 +7,8 @@ public class MainMenuManager : ScriptableObject
     [SerializeField]
     private StateMachine appStateMachine;
 
-    public StateMachine AppStateMachine { get => appStateMachine; set => appStateMachine = value; }
-
-    private void Awake()
+    private void OnEnable()
     {
-        appStateMachine = new StateMachine();
+        Debug.Log("Hello from MainMenuManager.OnEnable()!");
     }
 }
