@@ -11,6 +11,7 @@ public class MainMenuInitializer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        managingParent.AppStateMachine.AddState(new SplashScreenState());
         managingParent.AppStateMachine.OnStateChange += CheckChangedState;
     }
 
