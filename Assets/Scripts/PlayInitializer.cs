@@ -7,11 +7,13 @@ public class PlayInitializer : MonoBehaviour
 {
     [SerializeField] private AppManager managingParent;
 
+    private PlayingState playingState;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        managingParent.AppStateMachine.AddState(new PlayingState());
+        playingState = (PlayingState)(managingParent.AppStateMachine.AddState(new PlayingState()));
         managingParent.AppStateMachine.OnStateChange += CheckChangedState;
     }
 
@@ -24,6 +26,6 @@ public class PlayInitializer : MonoBehaviour
     void CheckChangedState(State newState)
     {
 
-        // TODO check if newState is relevant to us in MainMenu
+        // TODO check if newState is relevant to us in Playing State
     }
 }
