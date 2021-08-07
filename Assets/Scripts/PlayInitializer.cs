@@ -27,5 +27,9 @@ public class PlayInitializer : MonoBehaviour
     {
 
         // TODO check if newState is relevant to us in Playing State
+        if (newState == playingState)
+        {
+            Debug.Log("Hello from PlayInitializer.CheckChangedState()!");
+        }
     }
 }

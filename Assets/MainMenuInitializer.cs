@@ -27,5 +27,9 @@ public class MainMenuInitializer : MonoBehaviour
     {
 
         // TODO check if newState is relevant to us in MainMenu
+        if(newState == splashScreenState)
+        {
+            Debug.Log("Hello from MainMenuInitializer.CheckChangedState()!");
+        }
     }
 }
